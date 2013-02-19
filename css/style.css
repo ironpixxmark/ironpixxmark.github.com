@@ -177,7 +177,11 @@ ul#nav li.v-sap {
 
 
 /*-----CONTENT-----*/
-
+div#content {
+	background: #fbfbfc url('../images/artwork-bg.png') repeat-x left bottom;
+	padding: 1.875em;/*30/16*/
+	border: 1px solid #eeefef;
+}
 
 
 /*-----FORMS-----*/
