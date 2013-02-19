@@ -40,3 +40,89 @@ body { font-size: 1em; }
 .cf { zoom: 1; }
 
 
+/*-----TYPOGRAPHY-----*/
+body {
+	font-family: 'Droid Sans', sans-serif;
+}
+p, .button, ul#nav li ul, form#search-form input[type="text"], ul#tabs { font-size: 0.75em;/*12/16*/ }
+h1 { font-size: 1.125em;/*18/16*/ }
+p { margin-bottom: 1.666em; /*20/12*/}
+
+
+/*-----GENERAL-----*/
+.round {
+	border-radius: 0.3125em;/*5/16*/
+	-moz-border-radius: 0.3125em;
+	-webkit-border-radius: 0.3125em;
+}
+.text-upper {
+	text-transform: uppercase;
+}
+.fl { float: left; }
+.fr { float: right; }
+
+
+/*-----BUTTONS-----*/
+.button {
+	padding: 0.833em;/*10/12*/
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+.image-left {
+	background-position: 0.833em center;
+	padding-left: 3em;/*36/12*/
+}
+.image-right {
+	background-position: right center;
+	padding-right: 3em;/*36/12*/
+}
+
+
+/*-----COLORS-----*/
+.dark {
+	background-color: #3f4551;
+	color: #FFFFFF;
+}
+.dark:hover {
+	background-color: #5d6677;
+}
+a { color: #2069b4; }
+a:hover { color: #2a2e36; }
+p a { border-bottom: 1px dotted #2069b4; }
+p a:hover { border-bottom: 1px dotted #2a2e36; }
+.blue {
+	background-color: #2069B4;
+	color: #FFFFFF;
+}
+.blue:hover {
+	background-color: #5081B3;
+	color: #FFFFFF;
+}
+
+
+/*-----GENERAL-----*/
+.round {
+	border-radius: 0.3125em;/*5/16*/
+	-moz-border-radius: 0.3125em;
+	-webkit-border-radius: 0.3125em;
+}
+.text-upper {
+	text-transform: uppercase;
+}
+.fl { float: left; }
+.fr { float: right; }
+
+
+/*-----TOP BAR & HEADER-----*/
+div#top-bar {
+	background-color: #2a2e36;
+	padding: 0.625em 0;/*10/16*/
+}
+div#header {
+	padding: 1.25em 0; /*20/16*/
+}
+
+div#header-with-tabs {
+	padding: 1.25em 0 0 0; /*20/16*/
+}
+a#company-logo-small img { height: 30px; }
