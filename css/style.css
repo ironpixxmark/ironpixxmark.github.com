@@ -126,3 +126,32 @@ div#header-with-tabs {
 	padding: 1.25em 0 0 0; /*20/16*/
 }
 a#company-logo-small img { height: 30px; }
+
+
+/*------- TABS -------*/
+
+
+
+/*------- MENU --------*/
+
+
+/*-----CONTENT-----*/
+
+
+
+/*-----FORMS-----*/
+
+
+
+
+/*-----WIDTHS-----*/
+.full-width { width: 92%; }
+.page-full-width { padding: 0 1.875em;/*30/16*/ }
+
+
+/*-----FOOTER-----*/
+div#footer {
+	padding: 1.875em;/*30/16*/
+	text-align: center;
+}
+div#footer p { color: #2a2e36; }
