@@ -76,6 +76,14 @@ p { margin-bottom: 1.666em; /*20/12*/}
 	background-position: right center;
 	padding-right: 3em;/*36/12*/
 }
+.ic-left-arrow { background-image: url('../images/icon/ic-left-arrow.png'); }
+.ic-right-arrow { background-image: url('../images/icon/ic-right-arrow.png'); }
+.ic-menu-user { background-image: url('../images/icon/menu/ic-menu-user.png'); }
+.ic-menu-notification { background-image: url('../images/icon/menu/ic-menu-notification.png'); }
+.ic-menu-notification-active { background-image: url('../images/icon/menu/ic-menu-notification-active.png'); }
+.ic-menu-settings { background-image: url('../images/icon/menu/ic-menu-settings.png'); }
+.ic-menu-log-out { background-image: url('../images/icon/menu/ic-menu-log-out.png'); }
+.ic-search { background-image: url('../images/icon/ic-search.png'); }
 
 
 /*-----COLORS-----*/
