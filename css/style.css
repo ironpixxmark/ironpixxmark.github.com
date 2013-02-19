@@ -1,0 +1,42 @@
+/*-----RESET-----*/
+/*-----recet.css from
+http://developer.yahoo.com/yui/reset/#code -----*/
+*, html, body, div, dl,dt dd, ul,ol, li, h1, h2, h3, h4,
+h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+fieldset, img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+table {
+	border-collapse: collapse;
+	brder-spacing: 0;
+}
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+q:before,q:after {
+	content:'';
+}
+strong { font-weight: bold; }
+em { font-style: italic; }
+a { text-decoration: none; }
+a img { border: none; }
+body { font-size: 1em; }
+
+
+/*-----CLEARFIX-----*/
+/*MODERN BROWSER*/
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after { clear: both; }
+/*FOR IE BROWSERS*/
+.cf { zoom: 1; }
+
+
