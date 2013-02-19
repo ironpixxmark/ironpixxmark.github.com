@@ -133,6 +133,47 @@ a#company-logo-small img { height: 30px; }
 
 
 /*------- MENU --------*/
+ul#nav { list-style-type: none; }
+ul#nav > li {
+	float: left;
+	position: relative;
+	margin-right: 0.3125em; /*5/16*/
+}
+ul#nav li:hover ul { left: 0; }
+ul#nav li:hover a {
+	background-color: #5d6677;
+	color: white;
+}
+ul#nav li.v-sap {
+	border-right: 1px solid #3a404b;
+	margin-right: 0.625em; /* 10/16 */
+	padding-right: 0.625em;/* 10/16 */
+}
+	ul#nav li ul {
+		list-style-type: none;
+		position: absolute;
+		margin-top: -2px;
+		z-index: 999;
+		left: -9999px;
+	}
+	ul#nav li ul li a {
+		color: white;
+		background: #5d6677 url('../images/menu-item-bullet.png') no-repeat right center;
+		padding: 0.8333em 0.8333em 0.8333em 3em; /* 10/12 36/12*/
+		display: block;
+		width: 100%;
+		border-top: 1px solid #6a7282;
+	}
+	ul#nav li ul li a:hover { background-color: #7a8497; }
+	ul#nav li ul li:last-child a { 
+		border-bottom-right-radius: 0.3125em; /*5/16*/
+		border-bottom-left-radius: 0.3125em; /*5/16*/
+		-moz-border-bottom-right-radius: 0.3125em; /*5/16*/
+		-moz-border-bottom-left-radius: 0.3125em; /*5/16*/
+		-webkit-border-bottom-right-radius: 0.3125em; /*5/16*/
+		-webkit-border-bottom-left-radius: 0.3125em; /*5/16*/
+	}
+
 
 
 /*-----CONTENT-----*/
@@ -140,6 +181,36 @@ a#company-logo-small img { height: 30px; }
 
 
 /*-----FORMS-----*/
+form#login-form{
+	width: 18.75em;
+	margin: 0 auto;
+}
+form label {
+	display: block;
+	text-transform: uppercase;
+	color: #2a2e36;
+	margin-bottom: 0.416em;/*5/12*/
+}
+form input[type="text"], form input[type="password"] {
+	border: 1px solid #d9dbdd;
+	padding: 1.25em 0.833em;/*15/12 10/12*/
+	outline: none;
+}
+form input[type="text"]:hover, form input[type="password"]:hover,
+form input[type="text"]:focus, form input[type="password"]:focus {
+	border: 1px solid #bdbdbe;
+}
+form input[type="submit"] {
+	border: none;
+	cursor: pointer;
+}
+
+form#search-form input[type="text"] {
+	border: none;
+	padding: 0.833em 3em 0.833em 0.833em;/*10/12 36/16*/
+}
+::-webkit-input-placeholder { color: #858d9c; }
+:-moz-placeholder { color: #858d9c; }
 
 
 

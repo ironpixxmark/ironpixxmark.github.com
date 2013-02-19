@@ -8,9 +8,31 @@
 </head>
 <body>
 	<div id="top-bar">
-		<div class="page-full-width">
-			<a href="https://github.com/ironpixxmark/ironpixxmark.github.com" class="button round dark">View in Gthub Profile</a>
-		</div>
+		<div class="page-full-width cf">
+			<ul id="nav" class="fl">
+				<li class="v-sap"><a href="https://github.com/ironpixxmark/ironpixxmark.github.com" class="button round dark image-left ic-left-arrow">View in Gthub Profile</a></li>
+				<li><a href="#" class="button round dark image-left ic-menu-home">Home</a></li>
+				<li>
+					<a href="#" class="button round dark image-left ic-menu-user">My <strong>Portfolio</strong></a>
+					<ul>
+						<li><a href="#">Code</a></li>
+						<li><a href="#">Design</a></li>
+						<li><a href="#">Development</a></li>
+						<li><a href="#">CMS</a></li>
+					</ul>	
+				</li>
+				<li class="v-sap"><a href="#" class="button round dark image-left ic-menu-notification-active">About Me</a></li>
+				<li><a href="#" class="button round dark image-left ic-menu-settings">Hire ME</a></li>
+				<li><a href="#" class="button round dark image-left ic-menu-log-out">Contact Me</a></li>
+			</ul>
+			
+			<form method="#" id="search-form" class="fr">
+				<fieldset>
+					<input type="text" id="search-keyword" placeholder="search...." class="button round dark image-right ic-search" />
+					<input type="hidden" value="submit" />
+				</fieldset>
+			</form>	
+		</div><!-- end page-full-width -->
 	</div><!-- end of top bar-->
 
 	<div id="header">
