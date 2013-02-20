@@ -45,6 +45,7 @@ body {
 	font-family: 'Droid Sans', sans-serif;
 }
 p, .button, ul#nav li ul, form#search-form input[type="text"], ul#tabs { font-size: 0.75em;/*12/16*/ }
+ul#nav li ul li ul { font-size: 0.96875em; /* 15.5/16 */}
 h1 { font-size: 1.125em;/*18/16*/ }
 p { margin-bottom: 1.666em; /*20/12*/}
 
@@ -147,7 +148,8 @@ ul#nav > li {
 	position: relative;
 	margin-right: 0.3125em; /*5/16*/
 }
-ul#nav li:hover ul { left: 0; }
+ul#nav li:hover > ul { left: 0; }
+ul#nav li:hover  ul li:hover ul { left: 139%; }
 ul#nav li:hover a {
 	background-color: #5d6677;
 	color: white;
@@ -157,14 +159,21 @@ ul#nav li.v-sap {
 	margin-right: 0.625em; /* 10/16 */
 	padding-right: 0.625em;/* 10/16 */
 }
-	ul#nav li ul {
+	ul#nav  li  ul {
 		list-style-type: none;
 		position: absolute;
 		margin-top: -2px;
 		z-index: 999;
 		left: -9999px;
 	}
-	ul#nav li ul li a {
+	ul#nav li  ul li ul {
+		list-style-type: none;
+		position: absolute;
+		margin-top: -3.125em; /* 50/16 */
+		z-index: 999;
+		left: -9999px;
+	}
+	ul#nav li  ul  li a {
 		color: white;
 		background: #5d6677 url('../images/menu-item-bullet.png') no-repeat right center;
 		padding: 0.8333em 0.8333em 0.8333em 3em; /* 10/12 36/12*/
@@ -172,8 +181,16 @@ ul#nav li.v-sap {
 		width: 100%;
 		border-top: 1px solid #6a7282;
 	}
-	ul#nav li ul li a:hover { background-color: #7a8497; }
-	ul#nav li ul li:last-child a { 
+	ul#nav li ul li ul li a {
+		color: white;
+		background: #5d6677 url('../images/menu-item-bullet.png') no-repeat right center;
+		padding: 0.8333em 0 0.8333em 3em; /* 10/12 36/12*/
+		display: block;
+		width: 150%;
+		border-top: 1px solid #6a7282;
+	}
+	ul#nav li ul li a:hover, ul#nav li ul li ul li a:hover { background-color: #7a8497; }
+	ul#nav > li > ul > li:last-child > a, ul#nav > li > ul > li > ul > li:last-child > a { 
 		border-bottom-right-radius: 0.3125em; /*5/16*/
 		border-bottom-left-radius: 0.3125em; /*5/16*/
 		-moz-border-bottom-right-radius: 0.3125em; /*5/16*/
@@ -186,8 +203,9 @@ ul#nav li.v-sap {
 
 /*-----CONTENT-----*/
 div#content {
-	background: #fbfbfc url('../images/artwork-bg.png') repeat-x left bottom;
-	padding: 1.875em;/*30/16*/
+	/*background: #fbfbfc url('../images/artwork-bg.png') repeat-x left bottom;*/
+	background: #f8f9fa url('../images/artwork-bg.png') repeat-x left bottom;
+	padding: 1.875em 0;/*30/16*/
 	border: 1px solid #eeefef;
 }
 
